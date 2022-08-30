@@ -1,0 +1,56 @@
+.section5 {
+    padding: 70px 0 230px;
+    position: relative;
+
+    &:after {
+        content: "";
+        height: 350px;
+        width: 100%;
+        position: absolute;
+        background: url(../img/gmap.jpg) center/cover;
+        left: 0;
+        bottom: 0;
+    }
+
+    .quote-container {
+        background: $white;
+        z-index: 3;
+        position: relative;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 65px 70px;
+        width: 98%;
+        box-shadow: 0 0 3px #333;
+
+        &:before {
+            content: "";
+            background: url(../img/avatar-02.jpg) center/cover;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        p {
+            color: $color1;
+        }
+
+        .text-container {
+            padding: 25px 15px;
+            line-height: 30px;
+
+            &::before {
+                content: "❝";
+                font-size: 1.5rem;
+            }
+            &::after {
+                content: "❞";
+                font-size: 1.5rem;
+            }
+
+        }
+    }
+}
